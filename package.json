@@ -1,0 +1,23 @@
+{
+  "name": "tripdiary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nishantsanu/TripDiary.git"
+  },
+  "author": "nishant kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nishantsanu/TripDiary/issues"
+  },
+  "homepage": "https://github.com/nishantsanu/TripDiary#readme",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1"
+  }
+}

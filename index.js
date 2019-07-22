@@ -1,14 +1,20 @@
-
-var buttons = document.getElementsByClassName("filesubmitbutton");
-var display= document.getElementById("myEmbed").src;
-console.log('hii');
-
+const express=require('express');
+const app=express();
+const port=8080;
 
 
+app.use('/',require('./routes'));
 
-buttons[0].addEventListener('click', function () {
+app.set('view engine','ejs');
+app.set('views','./views');
 
-    
-    console.log(document.forms.myform.uploadfile.value);
-    return;
-});
+
+app.listen(port,function(err){
+    if(err){
+        console.log(`error entering port,Error:${err}`);
+        return;
+    }
+
+    console.log('server is running on port: ', port);
+
+}) 
